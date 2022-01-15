@@ -79,8 +79,42 @@
             </objects>
             <point key="canvasLocation" x="-13.6" y="109.29535232383809"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="m5r-uh-mbi">
+            <objects>
+                <viewController id="gOS-MA-95Y" customClass="DetailViewController" customModule="_KDC_BountyList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CIq-CT-j9K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQ0-sT-Ery">
+                                <rect key="frame" x="318" y="13" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0tQ-Hy-dIR"/>
+                                    <constraint firstAttribute="height" constant="50" id="ZQ6-cr-J8z"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="close_ic"/>
+                                <connections>
+                                    <action selector="close:" destination="gOS-MA-95Y" eventType="touchUpInside" id="4aj-SG-skP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aOe-wc-z0s"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aOe-wc-z0s" firstAttribute="trailing" secondItem="dQ0-sT-Ery" secondAttribute="trailing" constant="7" id="2Vg-DU-oYb"/>
+                            <constraint firstItem="dQ0-sT-Ery" firstAttribute="top" secondItem="aOe-wc-z0s" secondAttribute="top" constant="13" id="ssJ-YG-maL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pID-Hg-m4O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="109"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="close_ic" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
