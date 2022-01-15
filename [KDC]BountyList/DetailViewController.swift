@@ -8,6 +8,13 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var bountyLabel: UILabel!
+    
+    var name: String?
+    var bounty: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
